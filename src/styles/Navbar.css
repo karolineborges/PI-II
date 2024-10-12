@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.navbar {
+    position: relative;
+    background-color: #305573;
+    color: #d9e5ed;
+    height: 8vw;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    width: 40%;
+    height: inherit;
+    width: inherit;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+}
+.logo img{
+    height: 4rem;
+}
+
+.menu {
+    display: none;
+    padding: 2vw;
+    font-weight: bold;
+}
+
+.navbar-links {
+    flex-grow: 1;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-links ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar-links ul p {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links ul li {
+    margin: 60px;
+}
+
+.navbar-links ul a {
+    font-size: 16px;
+    font-weight: bold;    
+    color: #d9e5ed;    
+    text-decoration: none;
+}
+
+.navbar-links ul a.active {
+    color: #574c4c;
+    position: relative;
+}
+
+.navbar-links ul a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #574c4c;
+}
+
+.menuList{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 1010px) {
+    .navbar-links ul li {
+        margin: 1rem 50px 0 0;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+        width: 100vw;
+    }
+
+    .menuList svg{
+        scale: 0.5;
+    }
+
+    .navbar-links {
+        position: absolute;
+        right: 0;
+        top: 45px;
+        background-color: #fef7e5;
+        width: 0px;
+        height: calc(100vh - 60px);
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+        display: block;
+    }
+
+    .navbar-links.active {
+        margin-top: 2.5vw;
+        width: 100vw;        
+    }
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-inline-start: 0;
+    }
+
+    .navbar-links ul li {
+        margin-right: unset;
+    }
+
+    .navbar-links ul li a{
+        color: #454c41;
+    }
+
+    .navbar{
+        height: 14vw;
+        width: 100vw;
+    }
+
+    .logo{
+        position: absolute;
+        left: -4vw;
+        font-size: 1.5rem;
+    }
+
+    .logo img{
+        scale: 0.6;
+    }
+
+    .navbar-links ul p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #454c41;
+        text-decoration: none;
+    }
+
+    .navbar-links ul svg {
+        display: none;
+    }
+}

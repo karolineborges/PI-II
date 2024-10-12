@@ -1,0 +1,48 @@
+footer {
+    height: 13vw;
+    bottom: 0;
+    background-color: #305573;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+.footer div {
+    width: 30vw;
+    display: flex;
+    justify-content: end;
+}
+
+.footer div svg {
+    margin: 0.5rem 2rem 0 2rem;
+}
+
+.footer p {
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        height: 20vh;
+    }
+
+    .footer p {
+        margin-top: 3.3vh;
+        text-align: center;
+        color: white;
+    }
+
+    .footer div svg {
+        margin: 0;
+    }
+
+    .footer div {
+        display: flex;
+        justify-content: space-around;
+    }
+}
