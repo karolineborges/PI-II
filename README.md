@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Web Site - Associação Esperança dos Animais
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O site em questão faz parte da discipina Projeto Integrador II, da Universidade Virtual do Estado de São Paulo.
 
 ## Available Scripts
 
