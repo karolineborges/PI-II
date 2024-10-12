@@ -65,6 +65,7 @@ body{
     border-radius: 4rem; 
     color: #454c41;
     padding: 0 2vw;
+    align-content: center;
 }
 
 .pets-description p {

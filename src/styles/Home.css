@@ -48,27 +48,26 @@ span{
 
 .cards-home{
     display: flex;
-    justify-content: start;    
+    justify-content: space-around;
     background-color: rgb(248, 240, 240);
 }
 
 .card-home{
     align-items: center;
     border: #fff;
-    margin-top: 2vw;
-    padding: 1vw 1vw ;
-    background-color: #fff;
+    padding: 1vw 0.2vw ;
     border-radius: 20px ;
-    justify-content: space-between;
-    width: 47vw;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .card-home img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 20px;
     object-position: 25% 50%;
     object-fit: cover;
+    border: 0.6rem solid white;
 }
 
 @media (min-height: 1050px) {

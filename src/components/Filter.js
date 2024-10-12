@@ -27,7 +27,6 @@ function Filter({onFilter}){
 
     return(
             <div className="search-pet">
-                <h3>Galeria de pets</h3>
                 <form className="form-search" onSubmit={handleSubmit} aria-label="Formulário de Busca de Pets">
                     <div className="filters">
                         <div className="filter">
@@ -63,7 +62,7 @@ function Filter({onFilter}){
                     <div className='submit-search'>
                         <button type="submit" variant="contained" style={{
                             backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw", marginBottom: "1vw",
-                            width: "5vw", padding: "1rem", borderRadius: "0.5rem", border: "transparent"
+                            width: "6vw", height:"4vh",  borderRadius: "0.5rem", border: "transparent"
                         }}>
                             BUSCAR
                         </button>

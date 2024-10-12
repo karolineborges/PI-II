@@ -12,6 +12,7 @@ footer {
 .footer div {
     width: 30vw;
     display: flex;
+    justify-content: space-around;
 }
 
 .footer div svg {
