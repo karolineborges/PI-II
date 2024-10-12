@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Login.css';
 
 function Login(){
@@ -15,6 +15,10 @@ function Login(){
             window.location.href = "/";
         } 
     };
+
+    useEffect(() => {
+        document.getElementById("user").focus();
+    }, []);
 
     return (
         <div className="login-container">
@@ -41,7 +45,7 @@ function Login(){
                         required
                     />
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" aria-label="Enviar formulário de login">Login</button>
             </form>
         </div>
     );

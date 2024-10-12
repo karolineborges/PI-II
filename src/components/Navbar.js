@@ -52,7 +52,7 @@ function Navbar() {
                     {
                         sessionStorage.getItem("ADM") ?                     
                         <li onClick={() => { sessionStorage.removeItem("ADM"); window.location.href = "/"; }}>
-                            <svg fill="#d9e5ed" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
+                            <svg tabIndex="0" role="button" fill="#d9e5ed" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 490.693 490.693" space="preserve">
                                 <g>
                                     <g>
@@ -72,7 +72,7 @@ function Navbar() {
                         </li>  :                        
                         <li className='login' onClick={() => { setShowMenu(!showMenu)}}>
                             <Link to="/login" >
-                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#d9e5ed" strokeWidth="1" strokeLinecap="round" strokeLinejoin="miter">
+                                    <svg tabIndex="0" role="button"  width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#d9e5ed" strokeWidth="1" strokeLinecap="round" strokeLinejoin="miter">
 
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
