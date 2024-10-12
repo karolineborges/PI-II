@@ -35,7 +35,7 @@ function Filter({onFilter}){
                             <input type="text" name="name" value={dataSearch.name} onChange={handleChange} />
                         </div>
                         <div className="filter">
-                            <label htmlFor="type">Sexo</label>
+                            <label htmlFor="type"> Sexo </label>
                             <select name="type" onChange={handleChange}>
                                 <option defaultValue="" value="">Selecione uma opção</option>
                                 <option value="FÊMEA">Fêmea</option>
