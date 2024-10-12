@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ce5a173.css",
+    "main.js": "/static/js/main.592e9ec0.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/cat1.jpg": "/static/media/cat1.7402015defb33f5cbcfc.jpg",
+    "static/media/dog3.jpg": "/static/media/dog3.b194ec0a5ae6836b8637.jpg",
+    "static/media/dog1.jpg": "/static/media/dog1.bc3b545af9a955520cb4.jpg",
+    "static/media/dog2.jpg": "/static/media/dog2.903766a8bca6153bb272.jpg",
+    "static/media/cat_home.png": "/static/media/cat_home.b6b5fb8e17155854376a.png",
+    "static/media/aurora.png": "/static/media/aurora.8332bb22403ae762bb2e.png",
+    "static/media/trovao.png": "/static/media/trovao.5c2bf9b518d7f43f2dd2.png",
+    "static/media/tody.png": "/static/media/tody.883d059fec1eaa58fbce.png",
+    "static/media/flor.png": "/static/media/flor.1e83e6267aad5668312a.png",
+    "static/media/dof_home.jpg": "/static/media/dof_home.e999c4e1e5aea673e23a.jpg",
+    "static/media/princesa.png": "/static/media/princesa.29ca66329cb11f6fdead.png",
+    "static/media/dog_donation.jpg": "/static/media/dog_donation.7b82c249dcf79f39aecf.jpg",
+    "static/media/arthur.png": "/static/media/arthur.bd07a00e2cdaae8b2ba2.png",
+    "static/media/cat2.jpg": "/static/media/cat2.ac4546ff2b164fc159ca.jpg",
+    "static/media/logo.jpg": "/static/media/logo.152f011032534279b672.jpg",
+    "index.html": "/index.html",
+    "main.7ce5a173.css.map": "/static/css/main.7ce5a173.css.map",
+    "main.592e9ec0.js.map": "/static/js/main.592e9ec0.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ce5a173.css",
+    "static/js/main.592e9ec0.js"
+  ]
+}
