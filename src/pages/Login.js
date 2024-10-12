@@ -13,8 +13,7 @@ function Login(){
         if(user === "adm" && password === "123"){
             sessionStorage.setItem("ADM", true);
             window.location.href = "/";
-        }
-
+        } 
     };
 
     return (

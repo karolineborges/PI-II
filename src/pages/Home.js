@@ -19,12 +19,12 @@ function Home(){
             </button> 
         </div> 
         <h3>Pets em destaque</h3>       
-        <div className="cards-home" role="region" aria-labelledby="pets-highlight">
-            <div className="card-home" aria-label="Imagem de um cachorro">
-                <img src={dog} key="petCat" alt="Cachorro" />
+        <div className="cards-home" role="region">
+            <div className="card-home">
+                <img src={dog} key="petCat" alt="Imagem de um cachorro" />
             </div>
-            <div className="card-home" aria-label="Imagem com três cachorros caramelo">
-                <img src={cat} alt="Cachorros"/>
+            <div className="card-home">
+                <img src={cat} alt="Imagem com três cachorros caramelo" />
             </div>
         </div>
         </>

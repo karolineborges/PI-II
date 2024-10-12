@@ -5,7 +5,7 @@
     background-color: rgb(248, 240, 240);
 }
 
-.image-cat {
+.image-dog {
     align-items: center;
     border: #fff;
     padding: 1vw 1vw;
@@ -16,7 +16,7 @@
     height: 70vh;
 }
 
-.image-cat img{
+.image-dog img{
     width: 90vw;
     overflow: hidden;
     width: 100%;
@@ -61,12 +61,12 @@ header {
     .donation .infos {
         height: 87vh;
     }
-    .image-cat {
+    .image-dog {
         height: inherit;
         overflow :hidden;
     }
 
-    .image-cat img {
+    .image-dog img {
         width: 90vw;
         overflow: hidden;
         width: 100%;

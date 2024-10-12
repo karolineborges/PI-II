@@ -69,7 +69,7 @@ function Administration() {
                 </>
             </ModalForm>
             <section className="actions">
-                <table className="petList">
+                <table className="petList" role="table">
                     <thead>
                         <tr>
                             <th></th>
@@ -97,14 +97,14 @@ function Administration() {
                                     <td>{pet.castrated}</td>
                                     <td>{pet.vaccinated}</td>
                                     <td>{pet.size}</td>
-                                    <td><img className='photo-table' src={pet.image} /></td>
+                                    <td><img className='photo-table' src={pet.image} alt={pet.name}/></td>
                                     {
                                         button !== "sugestion" ?
                                             <td className="actions-icons">
                                                 <ModalAction index={index}></ModalAction>
                                             </td> :
                                             <td>
-                                                <svg id='add-sugestion' onClick={(event) => handleSugestion(index, event)} width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg aria-label="Adicionar sugestão" id='add-sugestion' onClick={(event) => handleSugestion(index, event)} width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <title>Adicionar</title>
 
                                                     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
@@ -114,7 +114,7 @@ function Administration() {
                                                     <g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /> </g>
 
                                                 </svg>
-                                                <svg id='delete-sugestion' onClick={(event) => handleSugestion(index, event)} fill="#000000" height="12px" width="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.607 180.607" style={{ marginBottom: "0.4vw", marginLeft: "0.3vw" }}>
+                                                <svg aria-label="Excluir sugestão" id='delete-sugestion' onClick={(event) => handleSugestion(index, event)} fill="#000000" height="12px" width="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.607 180.607" style={{ marginBottom: "0.4vw", marginLeft: "0.3vw" }}>
                                                     <title>Excluir</title>
 
                                                     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
