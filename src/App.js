@@ -12,7 +12,7 @@ import { Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <BrowserRouter>
         <Navbar />
         <Container>
@@ -25,7 +25,7 @@ function App() {
           </Routes>
         </Container>
       </BrowserRouter>
-    </div>
+    </main>
   );
 }
 

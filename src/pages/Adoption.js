@@ -30,9 +30,9 @@ function Adoption() {
 
     return (
         <div className="adoption">
-            <div className="pets-home">
+            <header className="pets-home">
                 <h2>Conheça os pets que estão em busca de um novo lar!</h2>
-            </div>
+            </header>
             <Filter onFilter={handleReturnedPets} />
             <div className="carousel">
                 {

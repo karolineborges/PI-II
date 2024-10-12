@@ -34,6 +34,17 @@
     width: 60vw;
     background-color: #f9d13b;
     border-radius: 20px;
+    height: 91%;
+    margin: 0 2rem;padding: 0 2rem;
+}
+
+.infos h3{
+    background-color: #f9d13b;
+    margin-bottom: 1rem;
+}
+
+header {
+    margin-bottom: 1rem;
 }
 
 .sponsorship .pets-description{
