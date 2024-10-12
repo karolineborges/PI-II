@@ -2,7 +2,6 @@ import '../styles/Carousel.css';
 import React from 'react';
 import { useState, useEffect } from "react";
 
-
 function Carousel({ pets, children }){
     const [currentIndex, setCurrentIndex] = useState(0)
     const [length, setLength] = useState(children.length)
@@ -41,6 +40,7 @@ function Carousel({ pets, children }){
 
     useEffect(() => {
         setLength(children.length);
+        setCurrentIndex(0)
         pet = pets[0];
         document.querySelector(".pets-description").innerHTML = `Olá, Visitante! Meu nome é ${pet.name.toUpperCase()}. Espécie: ${pet.specie}. Sexo: ${pet.sex}. Idade: ${pet.age}. Porte: ${pet.size} Vacinado(a): ${pet.vaccinated}. Castrado(a): ${pet.castrated}. ${pet.obs == "" ? "" : `OBS: ${pet.obs}`}`;
     }, [children]);

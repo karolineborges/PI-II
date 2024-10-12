@@ -44,9 +44,9 @@ function Filter({onFilter}){
                             </select>
                         </div>
                         <div className="filter">
-                        <label htmlFor="specie"> Espécie </label>
-                        <select onChange={handleChange} name="specie" >
-                                <option defaultValue >Selecione uma opção</option>
+                            <label htmlFor="specie"> Espécie </label>
+                            <select onChange={handleChange} name="specie" >
+                                <option defaultValue="" value="">Selecione uma opção</option>
                                 <option value="CÃO">CÃO</option>
                                 <option value="GATO">GATO</option>
                             </select>
@@ -54,7 +54,7 @@ function Filter({onFilter}){
                         <div className="filter">
                             <label htmlFor="size"> Porte </label>
                             <select id='last' onChange={handleChange} name="size" >
-                                <option defaultValue >Selecione uma opção</option>
+                                <option defaultValue="" value="">Selecione uma opção</option>
                                 <option value="PEQUENO">PEQUENO</option>
                                 <option value="MÉDIO">MÉDIO</option>
                                 <option value="GRANDE">GRANDE</option>
