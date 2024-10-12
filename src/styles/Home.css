@@ -71,6 +71,23 @@ span{
     object-fit: cover;
 }
 
+@media (min-height: 1050px) {
+    .cards-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        bottom: 0;
+        position: absolute;
+    }
+
+    .footer div {
+        width: auto;
+        display: flex;
+        justify-content: start;
+    }
+}
 
 @media (max-width: 768px) {
     .pets-home {
