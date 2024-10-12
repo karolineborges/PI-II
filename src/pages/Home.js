@@ -15,16 +15,16 @@ function Home(){
             <h1>Adote um bichinho</h1>
             <span>Nos ajude a encontrar um novo lar para eles, adote!</span>
             <button>
-                <Link to="/adoption">Ver pets disponíveis</Link>
-            </button>
-        </div>
+                <Link to="/adoption" aria-label="Ver pets disponíveis">Ver pets disponíveis</Link>
+            </button> 
+        </div> 
         <h3>Pets em destaque</h3>       
-        <div className="cards-home">
-            <div className="card-home">
-                <img src={dog} key="petCat" />
+        <div className="cards-home" role="region" aria-labelledby="pets-highlight">
+            <div className="card-home" aria-label="Imagem de um cachorro">
+                <img src={dog} key="petCat" alt="Cachorro" />
             </div>
-            <div className="card-home" key="petDog">
-                <img src={cat}/>
+            <div className="card-home" aria-label="Imagem com três cachorros caramelo">
+                <img src={cat} alt="Cachorros"/>
             </div>
         </div>
         </>

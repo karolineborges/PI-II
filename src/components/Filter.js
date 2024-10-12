@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from '@mui/material';
 import { searchPets } from "../db.js";
 import "../styles/Filter.css"
 
@@ -29,7 +28,7 @@ function Filter({onFilter}){
     return(
             <div className="search-pet">
                 <h3>Galeria de pets</h3>
-                <form className="form-search" onSubmit={handleSubmit}>
+                <form className="form-search" onSubmit={handleSubmit} aria-label="Formulário de Busca de Pets">
                     <div className="filters">
                         <div className="filter">
                             <label htmlFor="name"> Nome do Pet </label>
@@ -62,9 +61,12 @@ function Filter({onFilter}){
                         </div>
                     </div>
                     <div className='submit-search'>
-                        <Button type="submit" variant="contained" style={{ backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw 1vw 1vw 0" }}>
-                            Buscar
-                        </Button>
+                        <button type="submit" variant="contained" style={{
+                            backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw", marginBottom: "1vw",
+                            width: "5vw", padding: "1rem", borderRadius: "0.5rem", border: "transparent"
+                        }}>
+                            BUSCAR
+                        </button>
                     </div>
                 </form>
             </div>

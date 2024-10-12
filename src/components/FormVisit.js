@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import React, { useState } from 'react';
 import { scheduleVisit } from "../services/ScheduleService";
 
@@ -63,9 +62,12 @@ function FormVisit(){
                     <input type="datetime-local" name="date" value={dataForm.firstName} onChange={handleChange} required />
                 </div>
             </div>
-            <Button type="submit" variant="contained" style={{ backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw", marginBottom: "1vw" }}>
-                Agendar
-            </Button>
+            <button type="submit" variant="contained" style={{
+                backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw", marginBottom: "1vw",
+                width: "10vw", padding: "1rem", borderRadius: "0.5rem", border: "transparent"
+            }}>
+                AGENDAR
+            </button>
         </form>
         }</>
     );

@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material';
 import EditDeletPet from "./EditDeletePet.js";
 import AddPet from "./AddPet.js";
+import ModalForm from "../components/ModalQuestion.js";
 
-function ModalAction({index}) {
-
-    const [open, setOpen] = useState(false);
+function ModalAction({ index }) {
     const [form, setForm] = useState("");
 
     const handleOpenModal = (e) => {
         setForm(e.target.id);
-        setOpen(true);
+        openModal();
     };
 
-    const handleCloseModal = () => {
-        setOpen(false);
-    };
-    
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
     return (
-        <div style={{display: "flex"}}>
-            <svg id="editPet" onClick={handleOpenModal} style={{ marginTop: "0.3vw" }}  width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div style={{ display: "flex" }}>
+            <svg id="editPet" onClick={handleOpenModal} style={{ marginTop: "0.3vw" }} width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <title>Editar</title>
 
                 <g id="SVGRepo_bgCarrier" strokeWidth="0" />
@@ -42,18 +42,14 @@ function ModalAction({index}) {
 
                 </g>
 
-            </svg>   
-            <Dialog open={open} onClose={handleCloseModal}>
-                <DialogTitle style={{ backgroundColor: "#305573", color: "#d9e5ed", fontWeight: "bold" }}> Edição </DialogTitle >
-                    <DialogContent style={{ marginTop: "1vw" }}>
-                    {form === "add" ? <AddPet /> : form === "editPet" ? <EditDeletPet index={index} form={form} /> : <EditDeletPet index={index} form={form} />}                        
-                    </DialogContent>
-                <DialogActions>
-                    <Button onClick={handleCloseModal} className='buttonClose'>
-                        Fechar
-                    </Button>
-                </DialogActions>
-            </Dialog>
+            </svg>
+
+            <ModalForm isOpen={isModalOpen} onClose={closeModal}>
+                <>
+                    {form === "add" ? <AddPet /> : form === "editPet" ? <EditDeletPet index={index} form={form} /> : <EditDeletPet index={index} form={form} />}
+                </>
+            </ModalForm>
+
         </div>
     );
 }
