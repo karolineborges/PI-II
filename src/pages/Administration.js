@@ -7,23 +7,12 @@ import ModalForm from "../components/ModalQuestion.js";
 
 function Administration() {
     const [data, setData] = useState(JSON.parse(sessionStorage.getItem("data")));
-    const [open, setOpen] = useState(false);
-    const [, setForm] = useState("");
     const [button, setButton] = useState("");
 
     const [isModalOpen, setModalOpen] = useState(false);
 
     const openModal = () => setModalOpen(true);
     const closeModal = () => setModalOpen(false);
-
-    const handleOpenModal = (e) => {
-        setForm(e.target.id);
-        setOpen(true);
-    };
-
-    const handleCloseModal = () => {
-        setOpen(false);
-    };
 
     const handleClick = (e) => {
         setButton(e.target.id);
@@ -51,7 +40,9 @@ function Administration() {
 
     return (
         <div className="adm">
-            <h1>Ações de Administrador</h1>
+            <header>
+                <h1>Ações de Administrador</h1>
+            </header>
             <div style={{ display: "flex" }}>
 
                 <button type="button" onClick={handleList} className="buttonClose" style={{
