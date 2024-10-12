@@ -12,7 +12,7 @@ function Login(){
 
         if(user === "adm" && password === "123"){
             sessionStorage.setItem("ADM", true);
-            window.location.href = "/";
+            window.location.href = "/PI-II";
         } 
     };
 

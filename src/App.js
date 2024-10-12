@@ -21,7 +21,7 @@ function App() {
             <Route exact path="/donation" element={<Donation />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/administration" element={<Administration />} />
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/PI-II" element={<Home />} />
           </Routes>
         </Container>
       </BrowserRouter>

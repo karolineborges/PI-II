@@ -20,7 +20,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="container">
             <div className="logo">
-                    <Link to="/" onClick={() => setShowMenu(false)}><img src={logo} style={{borderRadius: "10px"}} key="logo"/></Link>                  
+                    <Link to="/PI-II" onClick={() => setShowMenu(false)}><img src={logo} style={{borderRadius: "10px"}} key="logo"/></Link>                  
             </div>
             <div className="menu" onClick={handleShowMenu}>
                 <div className="menuList">
@@ -33,7 +33,7 @@ function Navbar() {
                 <ul></ul>
                 <ul>
                     <li className={page === 'home' ? 'active' : ''}>
-                        <Link to="/" onClick={() => selectMenu('home')}>Início</Link>
+                            <Link to="/PI-II" onClick={() => selectMenu('home')}>Início</Link>
                     </li>
                     <li className={page === 'adoption' ? 'active' : ''}>
                         <Link to="/adoption" onClick={() => selectMenu('adoption')}>Adoção</Link>
@@ -51,7 +51,7 @@ function Navbar() {
                     <ul>
                     {
                         sessionStorage.getItem("ADM") ?                     
-                        <li onClick={() => { sessionStorage.removeItem("ADM"); window.location.href = "/"; }}>
+                            <li onClick={() => { sessionStorage.removeItem("ADM"); window.location.href = "/PI-II"; }}>
                             <svg tabIndex="0" role="button" fill="#d9e5ed" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 490.693 490.693" space="preserve">
                                 <g>
