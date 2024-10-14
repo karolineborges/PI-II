@@ -11,7 +11,7 @@ function Donation(){
                 </div>
                 <div className="content">
                     <header>
-                        <h2>Seja um contribuinte da causa animal</h2>
+                        <h2>Seja um contribuinte da causa animal!</h2>
                     </header>
                     <div className="infos">
                         <div> 🌟 Ajude a transformar vidas! Sua contribuição pode fazer a diferença na proteção e bem-estar dos animais. 
