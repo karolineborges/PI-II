@@ -60,7 +60,7 @@ function Adoption() {
                                     <AddPet IsSugestion={true} />
                                 </>
                             </ModalForm>
-                            <p>Conhece algum animalzinho que esteja aprecisando de abrigo temporário? Faça o cadastro dele <span onClick={openModal} tabIndex="0" role="button" > AQUI!</span></p>
+                            <p>Conhece algum animalzinho que esteja precisando de abrigo temporário? Faça o cadastro dele <span onClick={openModal} tabIndex="0" role="button" > AQUI!</span></p>
                         </div>
 
                     </div>

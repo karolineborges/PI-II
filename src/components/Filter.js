@@ -60,10 +60,7 @@ function Filter({onFilter}){
                         </div>
                     </div>
                     <div className='submit-search'>
-                        <button type="submit" variant="contained" style={{
-                            backgroundColor: '#f9d13b', color: '#454c41', marginTop: "2vw", marginBottom: "1vw",
-                            width: "6vw", height:"4vh",  borderRadius: "0.5rem", border: "transparent"
-                        }}>
+                        <button type="submit" variant="contained" className="search-buttton">
                             BUSCAR
                         </button>
                     </div>
